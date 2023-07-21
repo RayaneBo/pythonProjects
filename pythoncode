@@ -1,0 +1,11 @@
+import random as rd
+
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+n=""
+i=0
+
+nombreCaracteres = input("Combien de caractères ? : ")
+
+for i in range(int(nombreCaracteres)):
+        n += alphabet[rd.randint(0,25)]
+print("Voici votre mot de passe : " + n)
